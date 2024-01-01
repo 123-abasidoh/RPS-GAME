@@ -123,3 +123,11 @@ justify-content: center;
     transform: rotate(360deg);
   }
 }
+
+
+@media screen and (max-Width : 760px){
+ .container{
+  width: 70%;
+  padding: 25px;
+ } 
+}
