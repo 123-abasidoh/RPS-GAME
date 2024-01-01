@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock paper GAME</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id ="load">
+      <div class="loader" id="loader">KJA</div>
+    </div>
+    <div class="container">
+      <h2 id="welcome" >WELCOME!!!</h2>
+      <h1 id="scaling">
+        <span style="color: rgba(251, 253, 250, 0.961)">PLAY </span
+        ><span style="color: rgb(255, 179, 0)">NOW!!!</span>
+      </h1>
+      <div class="board">
+        <h3>SCORE</h3>
+        <div class="results">
+          <div class="win">
+            <h4>WINS</h4>
+            <h4 id="wins">0</h4>
+          </div>
+          <div class="win">
+            <h4>LOSS</h4>
+            <h4 id="lose">0</h4>
+          </div>
+          <div class="win">
+            <h4 >TIE</h4>
+            <h4 id="ties">0</h4>
+          </div>
+        </div>
+      </div>
+      <br />
+      <h4 id="major-text">
+        You: <span id="you"></span><br />computer: <span id="computer"></span>
+      </h4>
+
+      <div class="controls">
+        <button class="rock" onclick="rock()">ROCK</button>
+        <button class="paper" onclick="paper()">PAPER</button>
+        <button class="scissors" onclick="scissors()">SCISSORS</button>
+      </div>
+      <br />
+      <button onclick="reset()">RESET</button>
+    </div>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
